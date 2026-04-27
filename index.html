@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOTR | Servidor de Bioinformática</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sticky-nav" aria-label="Navegação rápida">
+    <nav class="sticky-nav-inner">
+      <a href="#guia-do-usuario">Guia do usuário</a>
+      <a href="#abertura-de-contas">Abertura de contas</a>
+      <a href="#infraestrutura">Infraestrutura</a>
+      <a href="#publicacoes">Publicações</a>
+      <a href="#equipe">Equipe</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" id="apresentacao">
+      <div class="container">
+        <div class="hero-logo">
+          <img src="lotr_logo.svg" alt="Logo LOTR">
+        </div>
+        <p class="lead">
+          O servidor LOTR pertence ao Laboratório de Medicina e Saúde Pública de Precisão (MESP<sup>2</sup>) da Fiocruz Bahia e dá suporte a atividades científicas em bioinformática e análise de dados em saúde para usuários do próprio laboratório.
+        </p>
+        <p class="lead">
+          Seu uso é voltado ao processamento de dados de pesquisa em genômica, transcriptômica, metagenômica, biologia estrutural e epidemiologia molecular, com foco em aplicações para saúde pública. O acesso externo é proibido, exceto mediante autorização prévia.
+        </p>
+
+        <div class="section-grid" aria-label="Seções do site">
+          <a class="section-button" href="#guia-do-usuario">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"></path></svg>
+              Guia do usuário
+            </span>
+          </a>
+          <a class="section-button" href="#abertura-de-contas">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M19 8v6"></path><path d="M22 11h-6"></path></svg>
+              Abertura de contas
+            </span>
+          </a>
+          <a class="section-button" href="#infraestrutura">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect><path d="M6 6h.01"></path><path d="M6 18h.01"></path></svg>
+              Infraestrutura
+            </span>
+          </a>
+          <a class="section-button" href="#publicacoes">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path><path d="M16 13H8"></path><path d="M16 17H8"></path><path d="M10 9H8"></path></svg>
+              Publicações científicas
+            </span>
+          </a>
+          <a class="section-button" href="#equipe">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              Equipe
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="guia-do-usuario">
+      <div class="container">
+        <h2>Guia do usuário</h2>
+        <p>Normas de acesso, segurança, uso de recursos, submissão de jobs e boas práticas para o servidor LOTR.</p>
+
+        <h3>Acesso e segurança</h3>
+        <ul>
+          <li>O acesso ao servidor é individual e intransferível.</li>
+          <li>É proibido compartilhar credenciais.</li>
+          <li>Senhas devem possuir no mínimo 8 caracteres, incluindo letras, números e caracteres especiais.</li>
+        </ul>
+
+        <h3>Primeiro acesso</h3>
+        <p>Após a criação da conta, o usuário receberá username e senha provisória. No primeiro acesso, será obrigatória a alteração da senha.</p>
+
+        <h3>Acesso ao servidor</h3>
+        <p>Antes de acessar o servidor, é necessário estar conectado à rede da Fiocruz. Fora da Fiocruz, o acesso via VPN é obrigatório.</p>
+        <ul>
+          <li>Solicite autorização de acesso VPN junto à Fiocruz.</li>
+          <li>Instale e configure a VPN conforme o guia oficial: <a href="https://fiocruz.br/documento/2024/12/vpn-passo-passo-da-instalacao">VPN - passo a passo da instalação</a>.</li>
+        </ul>
+        <pre><code>ssh usuario@IP_DO_SERVIDOR</code></pre>
+        <p>No Windows, pode-se utilizar PowerShell ou softwares como PuTTY.</p>
+
+        <h3>Alteração de senha</h3>
+        <pre><code>passwd</code></pre>
+        <p>O sistema solicitará senha atual, nova senha e confirmação da nova senha.</p>
+
+        <h3>Finalidade de uso</h3>
+        <p>O servidor deve ser utilizado exclusivamente para projetos acadêmicos e institucionais, processamento de dados científicos e desenvolvimento de pipelines computacionais.</p>
+        <p>É proibido o uso comercial, o processamento de dados privados de empresas e a execução de atividades não relacionadas à pesquisa.</p>
+
+        <h3>Uso de recursos computacionais com PBS</h3>
+        <ul>
+          <li>O uso dos recursos é gerenciado por sistema de filas PBS.</li>
+          <li>Análises pesadas não devem ser executadas diretamente no terminal.</li>
+          <li>Todo processamento intensivo deve ser submetido via fila.</li>
+        </ul>
+        <pre><code>#PBS -l select=1:ncpus=16:mem=64gb
+#PBS -l mem=64gb
+#PBS -l ngpus=1</code></pre>
+        <pre><code>nvidia-smi</code></pre>
+
+        <h3>Verificação do sistema</h3>
+        <pre><code>htop
+top
+nproc
+free -h
+df -h</code></pre>
+        <pre><code>qstat -u usuario
+qstat
+qstat -f JOB_ID
+qdel JOB_ID</code></pre>
+
+        <h3>Submissão de jobs</h3>
+        <pre><code>#!/bin/bash
+#PBS -N meu_job
+#PBS -l select=1:ncpus=16:mem=64gb
+#PBS -l walltime=24:00:00
+#PBS -o output.log
+#PBS -e error.log
+
+cd $PBS_O_WORKDIR
+
+conda activate meu_env
+
+python script.py</code></pre>
+        <pre><code>qsub script.pbs</code></pre>
+
+        <h3>Organização de dados</h3>
+        <pre><code>/home/usuario/
+/data/usuario/projeto/</code></pre>
+
+        <h3>Armazenamento e limpeza</h3>
+        <ul>
+          <li><code>/home</code>: scripts.</li>
+          <li><code>/data</code>: dados.</li>
+          <li>Remova arquivos temporários e evite duplicações.</li>
+        </ul>
+
+        <h3>Instalação de softwares e bases de dados</h3>
+        <ul>
+          <li>É proibida a instalação global sem autorização.</li>
+          <li>É proibido usar <code>sudo</code>.</li>
+          <li>É proibido baixar grandes bases em diretórios pessoais.</li>
+          <li>Prefira ambientes conda/mamba e documente versões.</li>
+          <li>Solicitações devem ser feitas ao ponto focal do grupo.</li>
+        </ul>
+        <p>Bases de dados devem ser centralizadas, evitando duplicação.</p>
+
+        <h3>Reprodutibilidade, backup e conduta</h3>
+        <ul>
+          <li>Versione scripts com Git, registre parâmetros e garanta rastreabilidade.</li>
+          <li>O servidor não é sistema de backup. Usuários são responsáveis pelos seus dados.</li>
+          <li>Comunique uso intensivo, respeite períodos de manutenção e priorize o uso coletivo.</li>
+        </ul>
+
+        <h3>Proibições</h3>
+        <ul>
+          <li>Mineração de criptomoedas.</li>
+          <li>Uso ilegal de software.</li>
+          <li>Execução de código malicioso.</li>
+          <li>Sobrecarga intencional.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="abertura-de-contas">
+      <div class="container">
+        <h2>Abertura de contas</h2>
+        <p>Para solicitar acesso ao servidor LOTR, envie um e-mail contendo as seguintes informações:</p>
+        <ul>
+          <li>Username desejado, com no máximo 8 caracteres.</li>
+          <li>Endereço eletrônico institucional.</li>
+          <li>Nome do(a) supervisor(a) ou orientador(a).</li>
+        </ul>
+        <div class="notice">
+          Solicitações devem ser enviadas para <a href="mailto:thiago.msantos@fiocruz.br">thiago.msantos@fiocruz.br</a>.
+        </div>
+        <ul>
+          <li>O username estará sujeito à disponibilidade e padronização.</li>
+          <li>O acesso será concedido após validação pela equipe responsável.</li>
+          <li>Ao solicitar acesso, o usuário declara estar ciente e de acordo com as normas do servidor.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="infraestrutura">
+      <div class="container">
+        <h2>Infraestrutura</h2>
+        <p>O ambiente computacional do servidor LOTR é baseado em arquitetura de alto desempenho, adequada para análises bioinformáticas intensivas.</p>
+        <div class="spec-grid">
+          <article class="spec-card"><h3>Servidor</h3><p>Dell PowerEdge R7625, Rack 2U, Dual Socket.</p></article>
+          <article class="spec-card"><h3>Processamento</h3><p>2x AMD EPYC 9354, 64 núcleos no total e alta capacidade de paralelização para pipelines de bioinformática.</p></article>
+          <article class="spec-card"><h3>Memória RAM</h3><p>512 GB DDR5 ECC, com suporte a grandes volumes de dados.</p></article>
+          <article class="spec-card"><h3>Armazenamento</h3><p>Aproximadamente 15 TB NVMe de alta performance, otimizado para leitura intensiva de dados.</p></article>
+          <article class="spec-card"><h3>Rede</h3><p>Interfaces de 10 GbE e 1 GbE para alta taxa de transferência de dados.</p></article>
+          <article class="spec-card"><h3>Expansibilidade</h3><p>Suporte a GPU, expansão de memória e expansão de armazenamento.</p></article>
+          <article class="spec-card"><h3>Gerenciamento</h3><p>Monitoramento remoto via iDRAC, redundância de energia e resfriamento.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="publicacoes">
+      <div class="container">
+        <h2>Publicações científicas</h2>
+        <p>Ao utilizar o servidor LOTR em trabalhos científicos, inclua a seguinte declaração:</p>
+        <div class="notice">
+          Computational analyses were performed on the LOTR (Learning Outbreak Trends in Real-time) server, at Fiocruz Bahia.
+        </div>
+        <p>Além disso, informe os administradores e compartilhe o trabalho com a equipe responsável.</p>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="equipe">
+      <div class="container">
+        <h2>Equipe</h2>
+        <p>O gerenciamento e suporte ao servidor LOTR são realizados de forma distribuída entre os diferentes grupos de pesquisa do laboratório. Cada grupo possui um ponto focal responsável por intermediar solicitações relacionadas ao uso do servidor.</p>
+        <p>Essas solicitações incluem instalação de softwares, solicitação de bases de dados, suporte básico aos usuários do grupo e comunicação com a equipe responsável pela infraestrutura.</p>
+        <h3>Pontos focais por grupo de pesquisa</h3>
+        <ul>
+          <li>Grupo Ricardo Khouri: Thiago Mendonça ou Laise de Moraes.</li>
+          <li>Grupo Leonardo Faria: Leonardo Faria.</li>
+          <li>Grupo Viviane Boaventura: a definir.</li>
+          <li>Grupo Natalia Tavares: Bruno Vinagre.</li>
+          <li>Grupo Filipe Rego: Samuel Araújo.</li>
+          <li>Grupo Ícaro Bonyek: a definir.</li>
+          <li>Grupo Vinícius Maracajá: Joyce Karoline.</li>
+        </ul>
+        <h3>Coordenação</h3>
+        <p>Ricardo Khouri e Manoel Barral.</p>
+      </div>
+    </section>
+
+    <section class="content-section support one-page-section" id="apoio">
+      <div class="container">
+        <h2>Apoio</h2>
+        <p>Este servidor conta com apoio do:</p>
+        <ul class="support-list">
+          <li>INCT DigiSaúde</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="partner-logos" aria-label="Logos institucionais">
+      <div class="container">
+        <div class="logo-row">
+          <img src="logo_digisaude.svg" alt="Logo INCT DigiSaúde">
+          <img src="fiocruz_bahia_logo.png" alt="Logo Fiocruz Bahia">
+          <img src="mesp_logo.jpg" alt="Logo MESP2">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">LOTR - Learning Outbreak Trends in Real-time | Fiocruz Bahia</div>
+  </footer>
+  <script>
+    const stickyNav = document.querySelector('.sticky-nav');
+    const hero = document.querySelector('#apresentacao');
+
+    const observer = new IntersectionObserver(([entry]) => {
+      stickyNav.classList.toggle('is-visible', !entry.isIntersecting);
+    }, {
+      threshold: 0,
+      rootMargin: '-92px 0px 0px 0px'
+    });
+
+    observer.observe(hero);
+  </script>
+</body>
+</html>
