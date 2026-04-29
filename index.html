@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOTR | Servidor de Bioinformática</title>
+  <link rel="icon" href="lotr_logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sticky-nav" aria-label="Navegação rápida">
+    <nav class="sticky-nav-inner">
+      <a href="#abertura-de-contas">Abertura de contas</a>
+      <a href="#guia-do-usuario">Guia do usuário</a>
+      <a href="#infraestrutura">Infraestrutura</a>
+      <a href="#publicacoes">Publicações</a>
+      <a href="#equipe">Equipe</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" id="apresentacao">
+      <div class="hero-banner">
+        <img src="cabecalho.svg" alt="Cabeçalho LOTR">
+      </div>
+      <div class="container">
+        <div class="intro-grid">
+          <p class="lead">
+            O servidor LOTR (<em>Learning Outbreak Trends in Real-Time</em>) pertence ao Laboratório de Medicina e Saúde Pública de Precisão (MESP<sup>2</sup>) da Fiocruz Bahia, em Salvador. Ele fornece suporte a atividades científicas em bioinformática e análise de dados em saúde para usuários do próprio laboratório.
+          </p>
+          <p class="lead">
+            Seu uso é voltado ao processamento de dados de pesquisa em genômica, transcriptômica, metagenômica, biologia estrutural e epidemiologia molecular, com foco em aplicações para saúde pública. O acesso externo é proibido, exceto mediante autorização prévia.
+          </p>
+        </div>
+
+        <div class="section-grid" aria-label="Seções do site">
+          <a class="section-button" href="#abertura-de-contas">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M19 8v6"></path><path d="M22 11h-6"></path></svg>
+              Abertura de contas
+            </span>
+          </a>
+          <a class="section-button" href="#guia-do-usuario">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"></path></svg>
+              Guia do usuário
+            </span>
+          </a>
+          <a class="section-button" href="#infraestrutura">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect><path d="M6 6h.01"></path><path d="M6 18h.01"></path></svg>
+              Infraestrutura
+            </span>
+          </a>
+          <a class="section-button" href="#publicacoes">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path><path d="M16 13H8"></path><path d="M16 17H8"></path><path d="M10 9H8"></path></svg>
+              Publicações científicas
+            </span>
+          </a>
+          <a class="section-button" href="#equipe">
+            <span class="button-main">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              Equipe
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="abertura-de-contas">
+      <div class="container">
+        <h2>Abertura de contas</h2>
+        <p>Para solicitar acesso ao servidor LOTR, envie um e-mail contendo as seguintes informações:</p>
+        <ul>
+          <li>Nome e um sobrenome.</li>
+          <li>Endereço eletrônico institucional.</li>
+          <li>Nome do(a) supervisor(a) ou orientador(a).</li>
+        </ul>
+        <div class="notice">
+          Solicitações devem ser enviadas para <a href="mailto:thiago.msantos@fiocruz.br">thiago.msantos@fiocruz.br</a>.
+        </div>
+        <ul>
+          <li>O username será definido pela equipe responsável e enviado ao usuário por e-mail.</li>
+          <li>O acesso será concedido após validação pela equipe responsável.</li>
+          <li>Ao solicitar acesso, o usuário declara estar ciente e de acordo com as normas do servidor.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="guia-do-usuario">
+      <div class="container">
+        <h2>Guia do usuário</h2>
+        <p>Normas de acesso, segurança, uso de recursos, submissão de jobs e boas práticas para o servidor LOTR.</p>
+
+        <h3>Finalidade de uso</h3>
+        <p>O servidor deve ser utilizado exclusivamente para projetos acadêmicos e institucionais, processamento de dados científicos e desenvolvimento de pipelines computacionais.</p>
+        <p>É proibido o uso comercial, o processamento de dados privados de empresas e a execução de atividades não relacionadas à pesquisa.</p>
+
+        <h3>Acesso e segurança</h3>
+        <ul>
+          <li>O acesso ao servidor é individual e intransferível.</li>
+          <li>É proibido compartilhar credenciais.</li>
+          <li>Senhas devem possuir no mínimo 8 caracteres, incluindo letras, números e caracteres especiais.</li>
+        </ul>
+
+        <h3>Primeiro acesso</h3>
+        <p>Após a criação da conta, o usuário receberá por e-mail o username, o endereço de IP do servidor e a senha provisória. No primeiro acesso, será obrigatória a alteração da senha.</p>
+
+        <h3>Alteração de senha</h3>
+        <pre><code>passwd</code></pre>
+        <p>Ao digitar a senha, os caracteres não aparecem na tela. Isso é normal em sistemas Linux.</p>
+        <p>Após executar o comando, o sistema solicitará a senha atual, a nova senha e a confirmação da nova senha.</p>
+        <p>A nova senha deve atender aos requisitos mínimos de segurança. Caso a senha seja recusada, escolha uma combinação mais forte, evitando nomes, datas, palavras comuns ou senhas já utilizadas.</p>
+        <p>Em caso de perda da senha provisória ou problemas na alteração, entre em contato com a equipe responsável.</p>
+
+        <h3>Acesso ao servidor</h3>
+        <p>Antes de acessar o servidor, é necessário estar conectado à rede da Fiocruz. Fora da Fiocruz, o acesso via VPN é obrigatório.</p>
+        <ul>
+          <li>Solicite autorização de acesso VPN junto à Fiocruz.</li>
+          <li>Instale e configure a VPN conforme o guia oficial: <a href="https://fiocruz.br/documento/2024/12/vpn-passo-passo-da-instalacao">VPN - passo a passo da instalação</a>.</li>
+        </ul>
+        <p>O endereço de IP do servidor será enviado por e-mail junto com as informações de acesso.</p>
+        <pre><code>ssh username@IP_DO_SERVIDOR</code></pre>
+        <p>No Windows, pode-se utilizar PowerShell ou softwares como PuTTY.</p>
+
+        <h3>Uso de alias para acesso</h3>
+        <p>Para facilitar o acesso, o usuário pode configurar um alias SSH. Com isso, em vez de digitar o endereço completo do servidor a cada acesso, será possível usar um nome curto, como <code>lotr</code>.</p>
+        <p>No Linux, macOS ou Windows com OpenSSH, edite ou crie o arquivo <code>~/.ssh/config</code> e adicione:</p>
+        <pre><code>Host lotr
+    HostName IP_DO_SERVIDOR
+    User username</code></pre>
+        <p>Depois disso, o acesso pode ser feito com:</p>
+        <pre><code>ssh lotr</code></pre>
+        <p>O mesmo alias também pode ser usado em transferências de arquivos, por exemplo:</p>
+        <pre><code>scp arquivo.fastq.gz lotr:/data/username/projeto/</code></pre>
+
+        <h3>Transferência de arquivos</h3>
+        <p>A transferência de arquivos entre o computador local e o servidor pode ser feita via <code>scp</code>, sempre utilizando o username e o endereço de IP recebidos por e-mail.</p>
+        <p>Para enviar um arquivo do computador local para o servidor:</p>
+        <pre><code>scp arquivo.fastq.gz username@IP_DO_SERVIDOR:/data/username/projeto/</code></pre>
+        <p>Para baixar um arquivo do servidor para o computador local:</p>
+        <pre><code>scp username@IP_DO_SERVIDOR:/data/username/projeto/resultado.tsv .</code></pre>
+        <p>Para transferir uma pasta inteira, use a opção <code>-r</code>:</p>
+        <pre><code>scp -r minha_pasta username@IP_DO_SERVIDOR:/data/username/projeto/</code></pre>
+        <p>Também é possível utilizar SFTP via terminal, que abre uma sessão interativa para navegar, enviar e baixar arquivos:</p>
+        <pre><code>sftp username@IP_DO_SERVIDOR</code></pre>
+        <p>Dentro da sessão SFTP, comandos como <code>put</code>, <code>get</code>, <code>ls</code>, <code>cd</code> e <code>bye</code> podem ser usados para transferir e navegar pelos arquivos.</p>
+        <p>A principal diferença é que <code>scp</code> é mais direto para copiar arquivos ou pastas em um único comando, enquanto <code>sftp</code> é mais conveniente para navegação interativa e múltiplas transferências na mesma sessão.</p>
+        <p>No Windows, além do PowerShell, o usuário pode utilizar programas com interface gráfica, como <a href="https://winscp.net/eng/download.php">WinSCP</a>, configurando o protocolo SFTP, o endereço de IP do servidor, o username e a senha recebidos por e-mail.</p>
+
+        <h3>Criação e edição de scripts</h3>
+        <p>Scripts são arquivos de texto contendo comandos que serão executados pelo sistema, como etapas de análise ou instruções de submissão de jobs. No servidor, eles podem ser criados e editados diretamente pelo terminal.</p>
+        <p>Para criar ou editar um arquivo com <code>vim</code>:</p>
+        <pre><code>vim script.pbs</code></pre>
+        <p>Também é comum encontrar o editor <code>vi</code>, usado da mesma forma:</p>
+        <pre><code>vi script.pbs</code></pre>
+        <p>Comandos básicos no <code>vi</code>/<code>vim</code>:</p>
+        <ul>
+          <li>Pressione <code>i</code> para entrar no modo de edição.</li>
+          <li>Pressione <code>Esc</code> para sair do modo de edição.</li>
+          <li>Digite <code>:w</code> e pressione Enter para salvar.</li>
+          <li>Digite <code>:q</code> e pressione Enter para sair.</li>
+          <li>Digite <code>:wq</code> e pressione Enter para salvar e sair.</li>
+          <li>Digite <code>:q!</code> e pressione Enter para sair sem salvar.</li>
+        </ul>
+        <p>Antes de submeter um script, revise caminhos, nomes de arquivos, ambiente computacional e recursos solicitados.</p>
+
+        <h3>Uso de recursos computacionais com PBS</h3>
+        <ul>
+          <li>O uso dos recursos é gerenciado por sistema de filas <a href="https://euler.icmc.usp.br/images/Manuais/PBSProUserGuide12.2.pdf">PBS</a>.</li>
+          <li>Análises pesadas não devem ser executadas diretamente no terminal.</li>
+          <li>Todo processamento intensivo deve ser submetido via fila.</li>
+        </ul>
+        <p>As diretivas iniciadas por <code>#PBS</code> devem ser incluídas no início do script de submissão para informar ao sistema de filas quais recursos serão necessários.</p>
+        <p>No exemplo abaixo, o job solicita 16 CPUs e 64 GB de memória. Quando houver uso de GPU, a diretiva <code>ngpus</code> indica a quantidade de GPUs solicitadas.</p>
+        <pre><code>#PBS -l select=1:ncpus=16:mem=64gb
+#PBS -l mem=64gb
+#PBS -l ngpus=1</code></pre>
+        <p>O comando <code>nvidia-smi</code> não é uma diretiva PBS. Ele pode ser usado no terminal ou dentro do job para verificar se a GPU está disponível e acompanhar seu uso.</p>
+        <pre><code>nvidia-smi</code></pre>
+
+        <h3>Verificação do sistema</h3>
+        <p>Antes de iniciar análises ou submeter jobs, é recomendável verificar o estado geral do servidor e o espaço disponível. Esses comandos ajudam a avaliar carga, memória, CPUs e armazenamento.</p>
+        <pre><code>htop
+top
+nproc
+free -h
+df -h</code></pre>
+        <ul>
+          <li><code>htop</code> ou <code>top</code>: mostram processos em execução e uso de CPU/memória.</li>
+          <li><code>nproc</code>: informa o número de CPUs disponíveis no sistema.</li>
+          <li><code>free -h</code>: mostra o uso de memória RAM em formato legível.</li>
+          <li><code>df -h</code>: mostra o uso de espaço em disco.</li>
+        </ul>
+        <p>Para acompanhar jobs submetidos ao PBS, use os comandos abaixo:</p>
+        <pre><code>qstat -u usuario
+qstat
+qstat -f JOB_ID
+qdel JOB_ID</code></pre>
+        <ul>
+          <li><code>qstat -u usuario</code>: lista os jobs do usuário.</li>
+          <li><code>qstat</code>: lista os jobs na fila.</li>
+          <li><code>qstat -f JOB_ID</code>: exibe informações detalhadas de um job específico.</li>
+          <li><code>qdel JOB_ID</code>: cancela um job submetido.</li>
+        </ul>
+
+        <h3>Submissão de jobs</h3>
+        <p>Jobs devem ser submetidos por meio de scripts PBS. O script abaixo define o nome do job, os recursos necessários, o tempo máximo de execução e os arquivos de saída e erro.</p>
+        <pre><code>#!/bin/bash
+#PBS -N meu_job
+#PBS -l select=1:ncpus=16:mem=64gb
+#PBS -l walltime=24:00:00
+#PBS -o output.log
+#PBS -e error.log
+
+cd $PBS_O_WORKDIR
+
+conda activate meu_env
+
+python script.py</code></pre>
+        <ul>
+          <li><code>#PBS -N</code>: define o nome do job.</li>
+          <li><code>#PBS -l select=1:ncpus=16:mem=64gb</code>: solicita 16 CPUs e 64 GB de memória.</li>
+          <li><code>#PBS -l walltime=24:00:00</code>: define o tempo máximo de execução.</li>
+          <li><code>#PBS -o</code> e <code>#PBS -e</code>: definem os arquivos de saída padrão e erro.</li>
+          <li><code>cd $PBS_O_WORKDIR</code>: executa o job a partir do diretório onde o comando <code>qsub</code> foi chamado.</li>
+          <li><code>conda activate meu_env</code>: ativa o ambiente com os programas necessários.</li>
+          <li><code>python script.py</code>: representa o comando principal da análise.</li>
+        </ul>
+        <p>Após salvar o script, submeta o job com:</p>
+        <pre><code>qsub script.pbs</code></pre>
+
+        <h3>Organização de dados</h3>
+        <p>Organize scripts e dados em diretórios separados. Isso facilita a reprodutibilidade, evita perda de arquivos e reduz duplicações.</p>
+        <pre><code>/home/usuario/
+/data/usuario/projeto/</code></pre>
+        <ul>
+          <li><code>/home/usuario/</code>: use para scripts, arquivos pequenos de configuração e documentos de trabalho.</li>
+          <li><code>/data/usuario/projeto/</code>: use para dados brutos, resultados intermediários e saídas de análises.</li>
+        </ul>
+        <p>Sempre que possível, crie uma pasta por projeto e use nomes claros para scripts, amostras e resultados.</p>
+
+        <h3>Armazenamento e limpeza</h3>
+        <ul>
+          <li><code>/home</code>: scripts.</li>
+          <li><code>/data</code>: dados.</li>
+          <li>Remova arquivos temporários e evite duplicações.</li>
+        </ul>
+
+        <h3>Instalação de softwares e bases de dados</h3>
+        <ul>
+          <li>É proibida a instalação global sem autorização.</li>
+          <li>É proibido usar <code>sudo</code>.</li>
+          <li>É proibido baixar grandes bases em diretórios pessoais.</li>
+          <li>Prefira ambientes conda/mamba e documente versões.</li>
+          <li>Solicitações devem ser feitas ao ponto focal do grupo.</li>
+        </ul>
+        <p>Bases de dados devem ser centralizadas, evitando duplicação.</p>
+
+        <h3>Reprodutibilidade, backup e conduta</h3>
+        <ul>
+          <li>Versione scripts com Git, registre parâmetros e garanta rastreabilidade.</li>
+          <li>O servidor não é sistema de backup. Usuários são responsáveis pelos seus dados.</li>
+          <li>Comunique uso intensivo, respeite períodos de manutenção e priorize o uso coletivo.</li>
+        </ul>
+
+        <h3>Proibições</h3>
+        <ul>
+          <li>Mineração de criptomoedas.</li>
+          <li>Uso ilegal de software.</li>
+          <li>Execução de código malicioso.</li>
+          <li>Sobrecarga intencional.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="infraestrutura">
+      <div class="container">
+        <h2>Infraestrutura</h2>
+        <p>O ambiente computacional do servidor LOTR é baseado em um Dell PowerEdge R7625, Rack 2U, Dual Socket, com arquitetura de alto desempenho adequada para análises bioinformáticas intensivas.</p>
+        <div class="spec-grid">
+          <article class="spec-card"><h3>Processamento</h3><p>2x AMD EPYC 9354, 64 núcleos no total e alta capacidade de paralelização para pipelines de bioinformática.</p></article>
+          <article class="spec-card"><h3>Memória RAM</h3><p>512 GB DDR5 ECC, com suporte a grandes volumes de dados.</p></article>
+          <article class="spec-card"><h3>Armazenamento</h3><p>Aproximadamente 15 TB NVMe de alta performance, otimizado para leitura intensiva de dados.</p></article>
+          <article class="spec-card"><h3>Rede</h3><p>Interfaces de 10 GbE e 1 GbE para alta taxa de transferência de dados.</p></article>
+          <article class="spec-card"><h3>GPU</h3><p>Equipado com 2 GPUs NVIDIA L4 (24 GB cada) para computação acelerada, modelagem, filogeografia, IA etc.</p></article>
+          <article class="spec-card"><h3>Gerenciamento</h3><p>Monitoramento remoto via iDRAC, redundância de energia e resfriamento.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="publicacoes">
+      <div class="container">
+        <h2>Publicações científicas</h2>
+        <p>Ao utilizar o servidor LOTR em trabalhos científicos, inclua a seguinte declaração:</p>
+        <div class="notice">
+          Computational analyses were performed on the LOTR (Learning Outbreak Trends in Real-time) server, at Fiocruz Bahia.
+        </div>
+        <p>Além disso, informe os administradores e compartilhe o trabalho com a equipe responsável.</p>
+      </div>
+    </section>
+
+    <section class="content-section one-page-section" id="equipe">
+      <div class="container">
+        <h2>Equipe</h2>
+        <p>O gerenciamento e suporte ao servidor LOTR são realizados de forma distribuída entre os diferentes grupos de pesquisa do laboratório. Cada grupo possui um ponto focal responsável por intermediar solicitações relacionadas ao uso do servidor.</p>
+        <p>Essas solicitações incluem instalação de softwares, solicitação de bases de dados, suporte básico aos usuários do grupo e comunicação com a equipe responsável pela infraestrutura.</p>
+        <h3>Pontos focais por grupo de pesquisa</h3>
+        <ul>
+          <li>Grupo Ricardo Khouri: Thiago Mendonça ou Laise de Moraes.</li>
+          <li>Grupo Leonardo Faria: Leonardo Faria.</li>
+          <li>Grupo Viviane Boaventura: a definir.</li>
+          <li>Grupo Natalia Tavares: Bruno Vinagre.</li>
+          <li>Grupo Filipe Rego: Samuel Araújo.</li>
+          <li>Grupo Ícaro Bonyek: a definir.</li>
+          <li>Grupo Vinícius Maracajá: Joyce Karoline.</li>
+        </ul>
+        <h3>Coordenação</h3>
+        <p>Ricardo Khouri e Manoel Barral.</p>
+      </div>
+    </section>
+
+    <section class="content-section support one-page-section" id="apoio">
+      <div class="container">
+        <h2>Apoio</h2>
+        <p>Este servidor conta com apoio do:</p>
+        <ul class="support-list">
+          <li>INCT DigiSaúde</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="partner-logos" aria-label="Logos institucionais">
+      <div class="container">
+        <div class="logo-row">
+          <img src="logo_digisaude.svg" alt="Logo INCT DigiSaúde">
+          <img src="fiocruz_bahia_logo.png" alt="Logo Fiocruz Bahia">
+          <img src="mesp_logo.jpg" alt="Logo MESP2">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>2026 | LOTR - Learning Outbreak Trends in Real-time | Fiocruz Bahia</div>
+      <div class="footer-address">Rua Waldemar Falcão, número 121, bairro Candeal, Salvador - BA</div>
+    </div>
+  </footer>
+  <script>
+    const stickyNav = document.querySelector('.sticky-nav');
+    const hero = document.querySelector('#apresentacao');
+
+    const observer = new IntersectionObserver(([entry]) => {
+      stickyNav.classList.toggle('is-visible', !entry.isIntersecting);
+    }, {
+      threshold: 0,
+      rootMargin: '-92px 0px 0px 0px'
+    });
+
+    observer.observe(hero);
+  </script>
+</body>
+</html>
